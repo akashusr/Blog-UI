@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <title>Single Blog</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="bg-slate-100 shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-5 lg:px-0 flex justify-between py-3 items-center"
+      >
+        <a href="index.html">
+          <img class="h-10" src="./assets/lws.svg" alt="Learn with Sumit" />
+        </a>
+        <a
+          href="add-blog.html"
+          class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-indigo-500"
+        >
+          + Add Blog
+        </a>
+      </div>
+    </nav>
+
+    <!-- main content -->
+    <section class="bg-gray-50">
+      <div class="max-w-7xl mx-auto px-5 lg:px-0">
+        <!--Title, delete/edit -->
+        <div class="text-center pt-6 md:pt-16">
+          <!-- delete/edit -->
+          <div class="flex mx-auto py-2 gap-10 w-48">
+            <div class="flex gap-1">
+              <div class="shrink-0">
+                <img class="w-5 block" src="./assets/edit.svg" alt="Edit" />
+              </div>
+              <a
+                href="add-blog.html"
+                class="text-sm leading-[1.7142857] text-slate-600"
+              >
+                Edit
+              </a>
+            </div>
+            <div class="flex gap-1">
+              <div class="shrink-0">
+                <img class="w-5 block" src="./assets/delete.svg" alt="Delete" />
+              </div>
+              <div
+                class="text-sm leading-[1.7142857] text-slate-600 cursor-pointer"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <!-- title  -->
+          <div>
+            <p class="text-sm md:text-base text-green-500 font-bold">
+              08 Mar 2022 <span class="text-gray-900">/</span> GETTING STARTED
+            </p>
+
+            <h1 class="font-bold break-normal text-3xl md:text-5xl">
+              How to use search engine optimization to drive sales
+            </h1>
+          </div>
+        </div>
+
+        <div></div>
+
+        <!--image-->
+        <div
+          class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80');
+            height: 75vh;
+          "
+        ></div>
+
+        <!--Container-->
+        <div class="container max-w-5xl mx-auto -mt-32">
+          <div class="mx-0 sm:mx-6">
+            <div
+              class="bg-white w-full rounded md:p-24 text-xl md:text-2xl text-gray-800"
+            >
+              <!--Post Content-->
+              <p class="py-6 px-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                harum rerum voluptatem quo recusandae magni placeat saepe
+                molestiae, sed excepturi cumque corporis perferendis hic. Sed
+                dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus
+                purus, in mattis tortor sollicitudin pretium. Phasellus at diam
+                posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi
+                diam, pulvinar ut molestie eget, eleifend ac magna. Sed at lorem
+                condimentum, dignissim lorem eu, blandit massa. Phasellus
+                eleifend turpis vel erat bibendum scelerisque. Maecenas id risus
+                dictum, rhoncus odio vitae, maximus purus. Etiam efficitur dolor
+                in dolor molestie ornare. Aenean pulvinar diam nec neque
+                tincidunt, vitae molestie quam fermentum. Donec ac pretium diam.
+                Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos. Duis nec nulla eget sem dictum elementum.
+              </p>
+            </div>
+
+            <!--Author-->
+            <div class="flex w-full items-center font-sans p-2 md:p-10">
+              <img
+                class="w-10 h-10 rounded-full mr-4"
+                src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                alt="Avatar of Author"
+              />
+              <div class="flex-1">
+                <p
+                  class="text-base font-bold text-base md:text-xl leading-none"
+                >
+                  Learn with sumit
+                </p>
+                <p class="text-gray-600 text-xs md:text-base">
+                  How to use search engine optimization to drive sales
+                </p>
+              </div>
+            </div>
+            <!--/Author-->
+          </div>
+        </div>
+
+        <!-- related blog card  -->
+        <div class="bg-gray-100/75">
+          <div class="container w-full max-w-6xl mx-auto px-2 py-8">
+            <div class="flex flex-wrap -mx-2">
+              <!-- single card  -->
+              <div class="w-full md:w-1/3 px-2 pb-12">
+                <div
+                  class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+                >
+                  <div class="flex-shrink-0">
+                    <img
+                      class="h-48 w-full object-cover"
+                      src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex-1 bg-white p-6 flex flex-col justify-between"
+                  >
+                    <div class="flex-1">
+                      <p class="text-sm font-medium text-indigo-600">
+                        <span
+                          class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                        >
+                          Article
+                        </span>
+                      </p>
+                      <a href="./single_blog.html" class="block mt-2">
+                        <p class="text-xl font-semibold text-gray-900">
+                          How to use search engine optimization to drive sales
+                        </p>
+                      </a>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="h-10 w-10 rounded-full"
+                          src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                          alt=""
+                        />
+                      </div>
+                      <div class="ml-3">
+                        <p
+                          class="text-sm font-medium text-gray-900 hover:underline"
+                        >
+                          Learn with sumit
+                        </p>
+                        <div class="flex space-x-1 text-sm text-gray-500">
+                          <time datetime="2020-03-16"> 08 Feb, 2022 </time>
+                          <span aria-hidden="true"> &middot; </span>
+                          <span> 11 min read </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- single card  -->
+              <div class="w-full md:w-1/3 px-2 pb-12">
+                <div
+                  class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+                >
+                  <div class="flex-shrink-0">
+                    <img
+                      class="h-48 w-full object-cover"
+                      src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex-1 bg-white p-6 flex flex-col justify-between"
+                  >
+                    <div class="flex-1">
+                      <p class="text-sm font-medium text-indigo-600">
+                        <span
+                          class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                        >
+                          Article
+                        </span>
+                      </p>
+                      <a href="./single_blog.html" class="block mt-2">
+                        <p class="text-xl font-semibold text-gray-900">
+                          How to use search engine optimization to drive sales
+                        </p>
+                      </a>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="h-10 w-10 rounded-full"
+                          src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                          alt=""
+                        />
+                      </div>
+                      <div class="ml-3">
+                        <p
+                          class="text-sm font-medium text-gray-900 hover:underline"
+                        >
+                          Learn with sumit
+                        </p>
+                        <div class="flex space-x-1 text-sm text-gray-500">
+                          <time datetime="2020-03-16"> 08 Feb, 2022 </time>
+                          <span aria-hidden="true"> &middot; </span>
+                          <span> 11 min read </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- single card  -->
+              <div class="w-full md:w-1/3 px-2 pb-12">
+                <div
+                  class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+                >
+                  <div class="flex-shrink-0">
+                    <img
+                      class="h-48 w-full object-cover"
+                      src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex-1 bg-white p-6 flex flex-col justify-between"
+                  >
+                    <div class="flex-1">
+                      <p class="text-sm font-medium text-indigo-600">
+                        <span
+                          class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                        >
+                          Article
+                        </span>
+                      </p>
+                      <a href="./single_blog.html" class="block mt-2">
+                        <p class="text-xl font-semibold text-gray-900">
+                          How to use search engine optimization to drive sales
+                        </p>
+                      </a>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="h-10 w-10 rounded-full"
+                          src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                          alt=""
+                        />
+                      </div>
+                      <div class="ml-3">
+                        <p
+                          class="text-sm font-medium text-gray-900 hover:underline"
+                        >
+                          Learn with sumit
+                        </p>
+                        <div class="flex space-x-1 text-sm text-gray-500">
+                          <time datetime="2020-03-16"> 08 Feb, 2022 </time>
+                          <span aria-hidden="true"> &middot; </span>
+                          <span> 11 min read </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="pt-6">
+      <div
+        class="max-w-7xl mx-auto px-5 py-6 lg:px-0 flex justify-between gap-2 border-t text-sm text-slate-400"
+      >
+        <div>Copyright 2022 Learn with Sumit.</div>
+        <div>
+          <a
+            href="https://youtube.com/learnwithsumit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            YouTube Channel
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
